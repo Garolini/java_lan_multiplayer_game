@@ -1,0 +1,28 @@
+
+.board-buttons {
+    -fx-background-radius: 10px;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+#readyButton {
+    -fx-background-radius: 20px;
+    -fx-border-color: #ffae00;
+    -fx-border-radius: 20px;
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+
+#readyCounter {
+    -fx-background-color: gold;
+    -fx-background-radius: 15;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+
+.button:hover {
+    -fx-background-color: #ffe691;
+}

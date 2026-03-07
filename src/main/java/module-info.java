@@ -1,0 +1,52 @@
+module io.github.java_lan_multiplayer {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+    requires org.controlsfx.controls;
+    requires com.fasterxml.jackson.databind;
+    requires java.desktop;
+    requires java.sql;
+
+    exports io.github.java_lan_multiplayer.server.model.tiles;
+    exports io.github.java_lan_multiplayer.server.model.cards;
+    opens io.github.java_lan_multiplayer.server.model.cards to com.fasterxml.jackson.databind;
+    opens io.github.java_lan_multiplayer.server.model.tiles to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.server.model.cards.projectile;
+    opens io.github.java_lan_multiplayer.server.model.cards.projectile to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.client;
+    opens io.github.java_lan_multiplayer.client to javafx.fxml;
+    exports io.github.java_lan_multiplayer.common;
+    opens io.github.java_lan_multiplayer.common to com.fasterxml.jackson.databind;
+    opens io.github.java_lan_multiplayer.client.controllers.flight to javafx.fxml;
+    exports io.github.java_lan_multiplayer.client.controllers.flight;
+    opens io.github.java_lan_multiplayer.client.controllers.lobby to javafx.fxml;
+    exports io.github.java_lan_multiplayer.client.controllers.lobby;
+    opens io.github.java_lan_multiplayer.client.controllers.login to javafx.fxml;
+    exports io.github.java_lan_multiplayer.client.controllers.login;
+    opens io.github.java_lan_multiplayer.client.controllers.shipBuilding to javafx.fxml;
+    exports io.github.java_lan_multiplayer.client.controllers.shipBuilding;
+    exports io.github.java_lan_multiplayer.client.popups;
+    opens io.github.java_lan_multiplayer.client.popups to javafx.fxml;
+    exports io.github.java_lan_multiplayer.common.messages;
+    opens io.github.java_lan_multiplayer.common.messages to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.common.messages.shipBuilding;
+    opens io.github.java_lan_multiplayer.common.messages.shipBuilding to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.common.messages.lobby;
+    opens io.github.java_lan_multiplayer.common.messages.lobby to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.common.messages.login;
+    opens io.github.java_lan_multiplayer.common.messages.login to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.common.messages.flight;
+    opens io.github.java_lan_multiplayer.common.messages.flight to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.server.model;
+    opens io.github.java_lan_multiplayer.server.model to javafx.fxml;
+    exports io.github.java_lan_multiplayer.server.events.flight to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.server.events;
+    exports io.github.java_lan_multiplayer.server.events.flight.cards to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.common.messages.flight.cardActions;
+    opens io.github.java_lan_multiplayer.common.messages.flight.cardActions to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.client.popups.cards;
+    opens io.github.java_lan_multiplayer.client.popups.cards to javafx.fxml;
+    exports io.github.java_lan_multiplayer.common.messages.endGame;
+    opens io.github.java_lan_multiplayer.common.messages.endGame to com.fasterxml.jackson.databind;
+    exports io.github.java_lan_multiplayer.server.events.game;
+}

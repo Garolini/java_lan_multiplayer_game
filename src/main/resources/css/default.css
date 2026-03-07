@@ -1,0 +1,48 @@
+* {
+    -fx-font-family: "DynaPuff", "Arial";
+}
+
+#mainContentPane {
+    -fx-background-image: url('../textures/backgrounds/background.png');
+    -fx-background-size: auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center bottom;
+}
+
+.white-label {
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+}
+
+.region {
+    -fx-border-color: white;
+    -fx-background-color: rgba(86, 11, 173, 0.5);
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.button {
+    -fx-cursor: HAND;
+    -fx-text-fill: black;
+    -fx-background-color: gold;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    /*-fx-font-weight: bold;*/
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.button:hover {
+    -fx-background-color: #ffe691;
+}
+
+.textField {
+    -fx-opacity: 0.5;
+    -fx-background-color: #560bad;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}

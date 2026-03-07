@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="50.0" minWidth="50.0" spacing="50.0" style="-fx-background-color: transparent;" stylesheets="@../../css/default.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.java_lan_multiplayer.client.popups.CardsPopupController">
+    <HBox fx:id="cardBox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="30.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="35.0" top="20.0" />
+        </padding>
+    </HBox>
+    <Button fx:id="closeButton" cancelButton="true" defaultButton="true" onAction="#onClose" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-background-radius: 15;" text="%button.close">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+</VBox>

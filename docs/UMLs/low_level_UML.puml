@@ -1,0 +1,106 @@
+@startuml
+!pragma layout smetana
+skinparam ranksep 50
+allowmixing
+title UML Layout
+
+namespace Server {
+
+
+
+' Force top-level class
+class Model {
+
+ - {finalValue} eventDispatcher : EventDispatcher
+ + addEventListener(Class<T>, ModelEventListener<T>): void
+
+}
+
+' Middle row: controller + listeners (same level)
+class Controller {
+- {finalValue} gameModel : GameModel
+- {finalValue} messageDispatcher : MessageDispatcher
+- {finalValue} router : CommandRouter
+
+
+- initializeListeners() : void
++ processCommand (VirtualView, String) : void
+
+}
+
+class EventDispatcher{
+    + addListener(Class<T>, ModelEventListener<T>) : void note
+    + fireEvent(T)
+
+}
+
+note right of EventDispatcher
+    <T extends EventModel>
+end note
+
+Model -[hidden]-> Controller
+Model -[hidden]-> EventDispatcher
+Controller -[hidden]-> EventDispatcher
+
+' Bottom row: VirtualView + ServerMain
+class VirtualView {
+
+- {finalValue} socket : Socket
+- {finalValue} controller : Controller
+
++ sendMessage(Object) : void
++ run() : void
++ close() : void
+}
+class ServerMain{
+    - {finalValue} controller : Controller <<static>>
+
+    - handleIncomingConnections() : void <<static>>
+}
+Controller -[hidden]-> VirtualView
+EventDispatcher -[hidden]-> ServerMain
+
+
+ServerMain -[hidden]-> Model
+
+' Add real relationships
+ServerMain ----> VirtualView
+Controller ----> Model
+VirtualView ----> Controller
+Model ---- EventDispatcher
+EventDispatcher ----> VirtualView
+}
+
+
+namespace Client {
+
+class VirtualServer {
+    - socket : Socket
+    - UICallBack : UICallBack
+
+    + attemptConnection(String, int) : void
+    + listenForMessages() : void
+    + close() : void
+    + sendMessage(Object) : void
+    + setCallBack(UICallBack) : void
+}
+
+class Controller {
+
+    + updateCallBack() : void
+
+}
+
+namespace View {
+
+}
+
+VirtualServer --> Controller
+Controller --> VirtualServer
+Controller --> View
+View --> Controller
+
+}
+VirtualServer -----> VirtualView
+VirtualView -----> VirtualServer
+@enduml

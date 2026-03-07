@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane style="-fx-background-color: #2d1564;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.java_lan_multiplayer.client.controllers.shipBuilding.ShipBuildingController">
+    <AnchorPane fx:id="mainContentPane" disable="true" mouseTransparent="true" prefHeight="800.0" prefWidth="1400.0" style="-fx-background-size: cover; -fx-background-repeat: no-repeat;">
+      <HBox alignment="CENTER" spacing="15.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="188.0">
+         <children>
+              <Button fx:id="leftButton" mnemonicParsing="false" onAction="#onClickTurnTileLeft" prefWidth="80.0" style="-fx-font-size: 14;" text="%button.left" />
+              <Rectangle fx:id="focusSlot" fill="TRANSPARENT" height="136.0" stroke="#ffffffcc" strokeType="INSIDE" strokeWidth="3.0" style="-fx-arc-height: 5; -fx-arc-width: 5;" width="136.0" />
+              <Button fx:id="rightButton" mnemonicParsing="false" onAction="#onClickTurnTileRight" prefWidth="80.0" style="-fx-font-size: 14;" text="%button.right" />
+         </children>
+      </HBox>
+        <ImageView fx:id="shipBoardImage" fitHeight="473.0" fitWidth="641.0" layoutX="30.0" layoutY="120.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../textures/cardboards/shipboard_2.png" />
+         <effect>
+            <DropShadow height="30.0" radius="14.5" width="30.0">
+               <color>
+                  <Color opacity="0.7480916380882263" />
+               </color>
+            </DropShadow>
+         </effect>
+        </ImageView>
+      <GridPane fx:id="gridPane" hgap="2.0" layoutX="54.0" layoutY="141.0" vgap="2.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="83.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="83.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="83.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="83.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="83.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="83.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="83.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="83.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="83.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="83.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="83.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="83.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <StackPane id="0" fx:id="reservedSlot0" layoutX="489.5" layoutY="135.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="83.0" prefWidth="83.0" style="-fx-background-color: rgba(255, 255, 255, .2); -fx-background-radius: 5;" />
+      <StackPane id="1" fx:id="reservedSlot1" layoutX="573.5" layoutY="135.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="83.0" prefWidth="83.0" style="-fx-background-color: rgba(255, 255, 255, .2); -fx-background-radius: 5;" />
+      <StackPane layoutX="230.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+         <children>
+              <Button fx:id="done_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 14;" text="1" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="295.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+         <children>
+              <Button fx:id="done_2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 14;" text="2" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="360.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+         <children>
+              <Button fx:id="done_3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 14;" text="3" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="425.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+         <children>
+              <Button fx:id="done_4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 14;" text="4" />
+         </children>
+      </StackPane>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" spacing="5.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="120.0" style="-fx-border-color: rgba(255,255,255,0.8); -fx-border-radius: 5; -fx-border-width: 2;">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+                <VBox fx:id="timerLabels" alignment="CENTER">
+                    <Label alignment="CENTER" contentDisplay="RIGHT" style="-fx-font-size: 12;" styleClass="white-label" text="%label.remaining_time">
+                        <font>
+                            <Font size="26.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="timerLabel" alignment="CENTER" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-font-size: 30;" styleClass="white-label" text="--">
+                        <font>
+                            <Font size="26.0" />
+                        </font>
+                    </Label>
+                </VBox>
+                <Button fx:id="timerFlipButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" disable="true" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../../textures/icons/hourglass_flip.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </StackPane>
+            <VBox fx:id="timerBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" />
+        </HBox>
+      <Button fx:id="settingsButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="40.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+             <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                 <effect>
+                     <ColorAdjust brightness="0.9" />
+                 </effect>
+                 <Image url="@../../textures/icons/settingsIcon2.png" />
+             </ImageView>
+         </graphic>
+      </Button>
+        <StackPane layoutX="732.0" layoutY="-120.0">
+            <ImageView id="0" fx:id="cardPile0" fitHeight="297.0" fitWidth="180.0" onMouseClicked="#onCardPileClick" opacity="0.6" pickOnBounds="true" preserveRatio="true" translateY="-150.0">
+                <Image url="@../../textures/cards/card_pile_level_2.png" />
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </ImageView>
+        </StackPane>
+        <StackPane layoutX="960.0" layoutY="-120.0">
+            <ImageView id="1" fx:id="cardPile1" fitHeight="297.0" fitWidth="180.0" onMouseClicked="#onCardPileClick" opacity="0.6" pickOnBounds="true" preserveRatio="true" translateY="-150.0">
+                <Image url="@../../textures/cards/card_pile_level_2.png" />
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </ImageView>
+        </StackPane>
+        <StackPane layoutX="1188.0" layoutY="-120.0">
+            <ImageView id="2" fx:id="cardPile2" fitHeight="297.0" fitWidth="180.0" onMouseClicked="#onCardPileClick" opacity="0.6" pickOnBounds="true" preserveRatio="true" translateY="-150.0">
+                <Image url="@../../textures/cards/card_pile_level_2.png" />
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </ImageView>
+        </StackPane>
+      <Label fx:id="doneLabel" layoutX="230.0" layoutY="20.0" style="-fx-text-fill: rgba(255,255,255,0.8); -fx-font-size: 15;" styleClass="white-label" text="%label.place_your_ship" />
+      <Label fx:id="doneLabel1" layoutX="520.0" layoutY="20.0" style="-fx-text-fill: rgba(255,255,255,0.8); -fx-font-size: 15;" styleClass="white-label" text="%label.other_ships" />
+      <StackPane layoutX="520.0" layoutY="55.0" prefHeight="40.0" prefWidth="140.0">
+         <children>
+            <HBox fx:id="otherShipButtonsBox" alignment="CENTER" spacing="10.0" />
+         </children>
+      </StackPane>
+      <stylesheets>
+         <URL value="@../../css/default.css" />
+         <URL value="@../../css/ship-building-scene.css" />
+      </stylesheets>
+    </AnchorPane>
+</StackPane>

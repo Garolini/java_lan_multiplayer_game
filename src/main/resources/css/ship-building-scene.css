@@ -1,0 +1,33 @@
+#readyButton {
+    -fx-background-color: gold;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-border-color: #ffae00;
+    -fx-border-radius: 20px;
+    -fx-border-insets: 0;
+    -fx-text-fill: black;
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+#readyCounter {
+    -fx-background-color: gold;
+    -fx-background-radius: 15;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.label:disabled {
+    -fx-opacity: 1;
+}
+
+.board-buttons {
+    -fx-background-color: gold;
+    -fx-background-radius: 10px;
+    -fx-border-color: #ffae00;
+    -fx-border-radius: 10px;
+    -fx-text-fill: black;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}

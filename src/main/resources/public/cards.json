@@ -1,0 +1,622 @@
+{
+    "learningFlight": [
+        {
+            "id": 0,
+            "level": 1,
+            "cardType": "smugglers",
+            "rewardCargo": [
+                "YELLOW",
+                "GREEN",
+                "BLUE"
+            ],
+            "cargoLossOnDefeat": 2,
+            "requiredCannonPower": 4,
+            "positionCost": 1
+        },
+        {
+            "id": 1,
+            "level": 1,
+            "cardType": "starDust"
+        },
+        {
+            "id": 2,
+            "level": 1,
+            "cardType": "openSpace"
+        },
+        {
+            "id": 3,
+            "level": 1,
+            "cardType": "meteorSwarm",
+            "meteors": [
+                {
+                    "source": "UP",
+                    "size": "LARGE"
+                },
+                {
+                    "source": "LEFT",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "RIGHT",
+                    "size": "SMALL"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "level": 1,
+            "cardType": "planets",
+            "planets": [
+                [
+                    "RED",
+                    "RED"
+                ],
+                [
+                    "RED",
+                    "BLUE",
+                    "BLUE"
+                ],
+                [
+                    "YELLOW"
+                ]
+            ],
+            "positionCost": 2
+        },
+        {
+            "id": 5,
+            "level": 1,
+            "cardType": "combatZone",
+            "combatRules": [
+                {
+                    "condition": "CREW_SIZE",
+                    "punishment": "FLIGHT_DAYS",
+                    "punishmentValue": 3,
+                    "cannonShots": [ ]
+                },
+                {
+                    "condition": "ENGINE_POWER",
+                    "punishment": "CREW_LOSS",
+                    "punishmentValue": 2,
+                    "cannonShots": [ ]
+                },
+                {
+                    "condition": "CANNON_POWER",
+                    "punishment": "CANNON_SHOTS",
+                    "punishmentValue": 0,
+                    "cannonShots": [
+                        {
+                            "source": "DOWN",
+                            "size": "SMALL"
+                        },
+                        {
+                            "source": "DOWN",
+                            "size": "LARGE"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "level": 1,
+            "cardType": "abandonedShip",
+            "rewardCredits": 4,
+            "crewToGiveUp": 3,
+            "positionCost": 1
+        },
+        {
+            "id": 7,
+            "level": 1,
+            "cardType": "abandonedStation",
+            "rewardCargo": [
+                "YELLOW",
+                "GREEN"
+            ],
+            "requiredCrew": 5,
+            "positionCost": 1
+        }
+    ],
+    "levelOne": [
+        {
+            "id": 8,
+            "level": 1,
+            "cardType": "slavers",
+            "rewardCredits": 5,
+            "crewLossOnDefeat": 3,
+            "requiredCannonPower": 6,
+            "positionCost": 1
+        },
+        {
+            "id": 9,
+            "level": 1,
+            "cardType": "pirates",
+            "rewardCredits": 4,
+            "cannonShots": [
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "UP",
+                    "size": "LARGE"
+                },
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                }
+            ],
+            "requiredCannonPower": 5,
+            "positionCost": 1
+        },
+        {
+            "id": 10,
+            "level": 1,
+            "cardType": "openSpace"
+        },
+        {
+            "id": 11,
+            "level": 1,
+            "cardType": "openSpace"
+        },
+        {
+            "id": 12,
+            "level": 1,
+            "cardType": "openSpace"
+        },
+        {
+            "id": 13,
+            "level": 1,
+            "cardType": "meteorSwarm",
+            "meteors": [
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "LEFT",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "RIGHT",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "DOWN",
+                    "size": "SMALL"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "level": 1,
+            "cardType": "meteorSwarm",
+            "meteors": [
+                {
+                    "source": "UP",
+                    "size": "LARGE"
+                },
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "UP",
+                    "size": "LARGE"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "level": 1,
+            "cardType": "planets",
+            "planets": [
+                [
+                    "RED",
+                    "GREEN",
+                    "BLUE",
+                    "BLUE",
+                    "BLUE"
+                ],
+                [
+                    "RED",
+                    "YELLOW",
+                    "BLUE"
+                ],
+                [
+                    "RED",
+                    "BLUE",
+                    "BLUE",
+                    "BLUE"
+                ],
+                [
+                    "RED",
+                    "GREEN"
+                ]
+            ],
+            "positionCost": 3
+        },
+        {
+            "id": 16,
+            "level": 1,
+            "cardType": "planets",
+            "planets": [
+                [
+                    "YELLOW",
+                    "GREEN",
+                    "BLUE",
+                    "BLUE"
+                ],
+                [
+                    "YELLOW",
+                    "YELLOW"
+                ]
+            ],
+            "positionCost": 3
+        },
+        {
+            "id": 17,
+            "level": 1,
+            "cardType": "planets",
+            "planets": [
+                [
+                    "GREEN",
+                    "GREEN"
+                ],
+                [
+                    "YELLOW"
+                ],
+                [
+                    "BLUE",
+                    "BLUE",
+                    "BLUE"
+                ]
+            ],
+            "positionCost": 1
+        },
+        {
+            "id": 18,
+            "level": 1,
+            "cardType": "abandonedShip",
+            "rewardCredits": 3,
+            "crewToGiveUp": 2,
+            "positionCost": 1
+        },
+        {
+            "id": 19,
+            "level": 1,
+            "cardType": "abandonedStation",
+            "rewardCargo": [
+                "RED",
+                "RED"
+            ],
+            "requiredCrew": 6,
+            "positionCost": 1
+        }
+    ],
+    "levelTwo": [
+        {
+            "id": 0,
+            "level": 2,
+            "cardType": "slavers",
+            "rewardCredits": 8,
+            "crewLossOnDefeat": 4,
+            "requiredCannonPower": 7,
+            "positionCost": 2
+        },
+        {
+            "id": 1,
+            "level": 2,
+            "cardType": "smugglers",
+            "rewardCargo": [
+                "RED",
+                "YELLOW",
+                "YELLOW"
+            ],
+            "cargoLossOnDefeat": 3,
+            "requiredCannonPower": 8,
+            "positionCost": 1
+        },
+        {
+            "id": 2,
+            "level": 2,
+            "cardType": "pirates",
+            "rewardCredits": 7,
+            "cannonShots": [
+                {
+                    "source": "UP",
+                    "size": "LARGE"
+                },
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "UP",
+                    "size": "LARGE"
+                }
+            ],
+            "requiredCannonPower": 6,
+            "positionCost": 2
+        },
+        {
+            "id": 3,
+            "level": 2,
+            "cardType": "starDust"
+        },
+        {
+            "id": 4,
+            "level": 2,
+            "cardType": "epidemic"
+        },
+        {
+            "id": 5,
+            "level": 2,
+            "cardType": "openSpace"
+        },
+        {
+            "id": 6,
+            "level": 2,
+            "cardType": "openSpace"
+        },
+        {
+            "id": 7,
+            "level": 2,
+            "cardType": "openSpace"
+        },
+        {
+            "id": 8,
+            "level": 2,
+            "cardType": "meteorSwarm",
+            "meteors": [
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "LEFT",
+                    "size": "LARGE"
+                },
+                {
+                    "source": "LEFT",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "LEFT",
+                    "size": "SMALL"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "level": 2,
+            "cardType": "meteorSwarm",
+            "meteors": [
+                {
+                    "source": "UP",
+                    "size": "LARGE"
+                },
+                {
+                    "source": "UP",
+                    "size": "LARGE"
+                },
+                {
+                    "source": "DOWN",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "DOWN",
+                    "size": "SMALL"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "level": 2,
+            "cardType": "meteorSwarm",
+            "meteors": [
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "UP",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "RIGHT",
+                    "size": "LARGE"
+                },
+                {
+                    "source": "RIGHT",
+                    "size": "SMALL"
+                },
+                {
+                    "source": "RIGHT",
+                    "size": "SMALL"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "level": 2,
+            "cardType": "planets",
+            "planets": [
+                [
+                    "RED",
+                    "RED",
+                    "RED",
+                    "YELLOW"
+                ],
+                [
+                    "RED",
+                    "RED",
+                    "GREEN",
+                    "GREEN"
+                ],
+                [
+                    "RED",
+                    "BLUE",
+                    "BLUE",
+                    "BLUE",
+                    "BLUE"
+                ]
+            ],
+            "positionCost": 4
+        },
+        {
+            "id": 12,
+            "level": 2,
+            "cardType": "planets",
+            "planets": [
+                [
+                    "RED",
+                    "RED"
+                ],
+                [
+                    "GREEN",
+                    "GREEN",
+                    "GREEN",
+                    "GREEN"
+                ]
+            ],
+            "positionCost": 3
+        },
+        {
+            "id": 13,
+            "level": 2,
+            "cardType": "planets",
+            "planets": [
+                [
+                    "RED",
+                    "YELLOW"
+                ],
+                [
+                    "YELLOW",
+                    "GREEN",
+                    "BLUE"
+                ],
+                [
+                    "GREEN",
+                    "GREEN"
+                ],
+                [
+                    "YELLOW"
+                ]
+            ],
+            "positionCost": 2
+        },
+        {
+            "id": 14,
+            "level": 2,
+            "cardType": "planets",
+            "planets": [
+                [
+                    "GREEN",
+                    "GREEN",
+                    "GREEN",
+                    "GREEN"
+                ],
+                [
+                    "YELLOW",
+                    "YELLOW"
+                ],
+                [
+                    "BLUE",
+                    "BLUE",
+                    "BLUE",
+                    "BLUE"
+                ]
+            ],
+            "positionCost": 3
+        },
+        {
+            "id": 15,
+            "level": 2,
+            "cardType": "combatZone",
+            "combatRules": [
+                {
+                    "condition": "CANNON_POWER",
+                    "punishment": "FLIGHT_DAYS",
+                    "punishmentValue": 4,
+                    "cannonShots": [ ]
+                },
+                {
+                    "condition": "ENGINE_POWER",
+                    "punishment": "CARGO_LOSS",
+                    "punishmentValue": 3,
+                    "cannonShots": [ ]
+                },
+                {
+                    "condition": "CREW_SIZE",
+                    "punishment": "CANNON_SHOTS",
+                    "punishmentValue": 0,
+                    "cannonShots": [
+                        {
+                            "source": "UP",
+                            "size": "SMALL"
+                        },
+                        {
+                            "source": "LEFT",
+                            "size": "SMALL"
+                        },
+                        {
+                            "source": "RIGHT",
+                            "size": "SMALL"
+                        },
+                        {
+                            "source": "DOWN",
+                            "size": "LARGE"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "level": 2,
+            "cardType": "abandonedShip",
+            "rewardCredits": 6,
+            "crewToGiveUp": 4,
+            "positionCost": 1
+        },
+        {
+            "id": 17,
+            "level": 2,
+            "cardType": "abandonedShip",
+            "rewardCredits": 8,
+            "crewToGiveUp": 5,
+            "positionCost": 2
+        },
+        {
+            "id": 18,
+            "level": 2,
+            "cardType": "abandonedStation",
+            "rewardCargo": [
+                "RED",
+                "YELLOW"
+            ],
+            "requiredCrew": 7,
+            "positionCost": 1
+        },
+        {
+            "id": 19,
+            "level": 2,
+            "cardType": "abandonedStation",
+            "rewardCargo": [
+                "YELLOW",
+                "YELLOW",
+                "GREEN"
+            ],
+            "requiredCrew": 8,
+            "positionCost": 2
+        }
+    ]
+}
