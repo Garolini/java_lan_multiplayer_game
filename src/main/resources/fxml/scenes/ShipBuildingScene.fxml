@@ -118,7 +118,7 @@
                  <effect>
                      <ColorAdjust brightness="0.9" />
                  </effect>
-                 <Image url="@../../textures/icons/settingsIcon2.png" />
+                 <Image url="@../../textures/icons/settingsIcon.png" />
              </ImageView>
          </graphic>
       </Button>

@@ -28,9 +28,6 @@ public class ClientMain extends Application {
     @Override
     public void start(Stage stage) {
 
-        Font.loadFont(getClass().getResourceAsStream("/fonts/DynaPuff-Regular.ttf"), 12);
-        Font.loadFont(getClass().getResourceAsStream("/fonts/DynaPuff-Bold.ttf"), 12);
-
         SceneSwitch.setStage(stage);
 
         stage.setTitle("Java Lan Multiplayer Game");

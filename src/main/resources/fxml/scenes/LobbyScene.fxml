@@ -64,7 +64,7 @@
          </cursor>
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-               <Image url="@../../textures/icons/settingsIcon2.png" />
+               <Image url="@../../textures/icons/settingsIcon.png" />
                <effect>
                   <ColorAdjust brightness="1.0" />
                </effect>

@@ -1,20 +1,48 @@
 # Java LAN Multiplayer Game
 
-> ⚠️ **Note:** This repository is a public transformation of a university project originally developed for a Software Engineering course.  
-> All proprietary assets (images, graphics, etc.) have been removed.  
-> The game is therefore **not fully playable**; this version serves only as an educational example of a Java LAN multiplayer implementation.
+> ⚠️ **Note:** This repository is a public adaptation of a university project originally developed for a Software Engineering course.  
+> All proprietary assets (images, graphics, etc.) from the original game have been removed for copyright reasons and replaced with simple placeholder graphics.  
+> The game is therefore not fully representative of the original visual experience, and this version is provided only as an educational example of a Java LAN multiplayer implementation.
 
 ## Project Overview
 
 This project was initially developed as a final university project in Java.  
-It demonstrates a client-server structure for LAN multiplayer games, including components for resource management and game logic.  
-The focus is on illustrating software architecture, networking, and object-oriented programming in Java.
+It demonstrates a client-server structure for LAN multiplayer games, including components for resource management and game logic.
+
+The focus of this repository is to illustrate:
+
+- Java networking (TCP sockets)
+- Client-server architecture
+- Multiplayer synchronization over LAN
+- Object-oriented design in Java
+- Maven project structure
 
 ### Original Team
 - Michele Garolini
 - Michael Jafari
 - Cesario Migliaccio
 
+
+## Screenshots
+
+*Note: Original graphical assets were removed due to copyright restrictions and replaced with simple placeholder graphics.*
+
+### Ship Building Phase
+![Ship Building](docs/screenshots/ship_building.png)
+
+### Mission Report
+![Mission Report](docs/screenshots/mission_report.png)
+
+## Architecture
+
+The application follows a client-server architecture.
+
+- The server maintains the authoritative game state
+- clients connect via TCP sockets
+- game actions are transmitted using a custom application protocol
+- the server broadcasts state updates to all connected clients
+
+Further implementation details are available in the project documentation.
 
 ## How to Compile with Maven
 
@@ -60,6 +88,22 @@ You can run the program using the compiled JAR file:
 | `--lang`, `-l`  | Sets the client UI language.             | `en`, `it`      | `en`          |
 | `--debug`, `-d` | Enables debug mode with verbose logging. | (flag only)     | Off           |
 
+## Documentation
+
+Additional technical documentation is available:
+
+- [Communication Protocol](docs/communication_protocol.md)
+- [Low-Level UML Diagram](docs/uml_low_level.png)
+
+## Testing
+
+The project includes 100+ automated tests covering core game logic and networking components.
+
+Tests can be executed with:
+
+```bash
+mvn test
+```
 
 ## Legal Disclaimer
 
