@@ -74,11 +74,11 @@
               <Button fx:id="done_3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 14;" text="3" />
          </children>
       </StackPane>
-      <StackPane layoutX="425.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
-         <children>
-              <Button fx:id="done_4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 14;" text="4" />
-         </children>
-      </StackPane>
+        <StackPane layoutX="425.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+            <Button fx:id="done_4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 14;" text="4"/>
+        </StackPane>
         <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" spacing="5.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
             <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="120.0" style="-fx-border-color: rgba(255,255,255,0.8); -fx-border-radius: 5; -fx-border-width: 2;">
                 <padding>
@@ -148,11 +148,9 @@
         </StackPane>
       <Label fx:id="doneLabel" layoutX="230.0" layoutY="20.0" style="-fx-text-fill: rgba(255,255,255,0.8); -fx-font-size: 15;" styleClass="white-label" text="%label.place_your_ship" />
       <Label fx:id="doneLabel1" layoutX="520.0" layoutY="20.0" style="-fx-text-fill: rgba(255,255,255,0.8); -fx-font-size: 15;" styleClass="white-label" text="%label.other_ships" />
-      <StackPane layoutX="520.0" layoutY="55.0" prefHeight="40.0" prefWidth="140.0">
-         <children>
-            <HBox fx:id="otherShipButtonsBox" alignment="CENTER" spacing="10.0" />
-         </children>
-      </StackPane>
+        <StackPane layoutX="520.0" layoutY="55.0" prefHeight="40.0" prefWidth="140.0">
+            <HBox fx:id="otherShipButtonsBox" alignment="CENTER" spacing="10.0"/>
+        </StackPane>
       <stylesheets>
          <URL value="@../../css/default.css" />
          <URL value="@../../css/ship-building-scene.css" />

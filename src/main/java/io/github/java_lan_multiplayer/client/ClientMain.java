@@ -5,7 +5,6 @@ import io.github.java_lan_multiplayer.common.Logger;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.image.Image;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.util.Locale;

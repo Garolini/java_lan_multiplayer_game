@@ -92,8 +92,8 @@ You can run the program using the compiled JAR file:
 
 Additional technical documentation is available:
 
-- [Communication Protocol](docs/communication_protocol.md)
-- [Low-Level UML Diagram](docs/uml_low_level.png)
+- [Communication Protocol](docs/Communication%20Protocol/communication_protocol.md)
+- [Low-Level UML Diagram](docs/UMLs/uml_low_level.puml)
 
 ## Testing
 
